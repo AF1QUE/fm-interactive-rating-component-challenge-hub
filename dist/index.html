@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="output.css">
+
+
+  <title>Interactive rating component | Frontend Mentor</title>
+</head>
+
+<body class="bg-veryDarkBlue">
+
+  <main class="h-[100vh] flex items-center">
+    <div class="bg-darkBlue card w-[410px] mx-auto p-[30px] rounded-[25px]">
+      <div class="card__logo bg-[#2d3842] inline-block p-[15px] rounded-[50px] mb-[20px]">
+        <img src=" /images/icon-star.svg" alt="">
+      </div>
+      <h1 class="card__title text-[28px] font-[700] text-white mb-[10px]">How did we do?</h1>
+      <p class="card__desc text-[16px] font-[400] text-mediumGrey mb-[30px] leading-[23px] tracking-[-0.025em]">Please
+        let
+        us know how we
+        did with your
+        support
+        request. All feedback
+        is appreciated
+        to help us improve our offering!</p>
+      <div class="card__rating flex justify-between mb-[30px]">
+        <button class="rating">1</button>
+        <button class="rating">2</button>
+        <button class="rating">3</button>
+        <button class="rating">4</button>
+        <button class="rating">5</button>
+      </div>
+      <button
+        class="card__btn w-[100%] uppercase bg-orange text-white font-regular rounded-[50px] tracking-[0.09em] leading-[0px] h-[45px] hover:bg-white hover:text-[#080808]">Submit</button>
+    </div>
+
+    <div
+      class="bg-darkBlue card card--thankyou w-[410px] mx-auto p-[30px] rounded-[25px] flex flex-col justify-center hidden">
+      <div class="card__logo inline-block p-[15px] rounded-[50px] mb-[20px] flex justify-center">
+        <img src="/images/illustration-thank-you.svg" alt="">
+      </div>
+      <span
+        class="selected__rating text-[16px] font-regular text-orange/75 text-center mb-[20px] bg-[#2d3842] rounded-[50px] py-[5px] block">
+        You selected 4 out of 5</span>
+      <h1 class="card__title text-[28px] font-[700] text-white mb-[10px] text-center">Thank you!</h1>
+
+      <p
+        class="card__desc text-[16px] font-[400] text-mediumGrey mb-[30px] leading-[23px] tracking-[-0.025em] text-center">
+        Please
+        We appreciate you taking the time to give a rating. If you ever need more support,
+        don’t hesitate to get in touch!</p>
+    </div>
+    </div>
+  </main>
+
+
+
+
+
+
+
+
+
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+
+  <!-- You selected -->
+  <!-- Add rating here out of 5 -->
+  <!-- 
+
+
+  We appreciate you taking the time to give a rating. If you ever need more support,
+  don’t hesitate to get in touch! -->
+
+  <script src="script.js"></script>
+</body>
+
+</html>

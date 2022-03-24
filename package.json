@@ -1,0 +1,25 @@
+{
+  "name": "fm-interactive-rating-component-challenge-hub",
+  "version": "1.0.0",
+  "description": "![Design preview for the Interactive rating component coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "tailwind build src/input.css -o dist/output.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AF1QUE/fm-interactive-rating-component-challenge-hub.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AF1QUE/fm-interactive-rating-component-challenge-hub/issues"
+  },
+  "homepage": "https://github.com/AF1QUE/fm-interactive-rating-component-challenge-hub#readme",
+  "devDependencies": {
+    "install": "^0.13.0",
+    "npm": "^8.5.5",
+    "tailwindcss": "^3.0.23"
+  }
+}
