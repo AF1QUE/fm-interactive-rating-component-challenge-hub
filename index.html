@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="output.css">
+  <link rel="stylesheet" href="/dist/output.css">
 
 
   <title>Interactive rating component | Frontend Mentor</title>
@@ -14,7 +14,7 @@
 <body class="bg-veryDarkBlue">
 
   <main class="h-[100vh] flex items-center">
-    <div class="bg-darkBlue card w-[410px] mx-auto p-[30px] rounded-[25px]">
+    <div class="bg-darkBlue card card-1 w-[410px] mx-auto p-[30px] rounded-[25px]">
       <div class="card__logo bg-[#2d3842] inline-block p-[15px] rounded-[50px] mb-[20px]">
         <img src=" /images/icon-star.svg" alt="">
       </div>
@@ -77,7 +77,37 @@
   We appreciate you taking the time to give a rating. If you ever need more support,
   don’t hesitate to get in touch! -->
 
-  <script src="script.js"></script>
+  <script src="/dist/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"
+    integrity="sha512-kVlGhj2qFy+KBCFuvjBJTGUMxbdqJKs4yK2jh0e0VPhWUPiPC87bzm4THmaaIee3Oj7j6sDpTTgm2EPPiESqBg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script>
+
+    animeStart = () => {
+      console.log('working...');
+      timeline.play();
+    }
+
+    const timeline = gsap.timeline({
+      paused: true,
+      onStart: animeStart,
+    }).fromTo(".card--thankyou", {
+
+      opacity: 0,
+      scale: 0.85,
+    }, {
+      duration: 0.3,
+      opacity: 1,
+      scale: 1,
+      ease: "power4.out",
+    });
+
+
+    const cardBtn = document.querySelector('.card__btn');
+    cardBtn.addEventListener('click', animeStart)
+
+  </script>
 </body>
 
 </html>
